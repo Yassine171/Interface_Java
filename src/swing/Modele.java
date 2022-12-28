@@ -12,12 +12,12 @@ import javax.swing.JPanel;
  *
  * @author Admin
  */
-public class Scrapping extends javax.swing.JFrame {
+public class Modele extends javax.swing.JFrame {
 
     /**
      * Creates new form Home
      */
-    public Scrapping() {
+    public Modele() {
         initComponents();
         setColor(btn_1); 
         ind_1.setOpaque(true);
@@ -50,8 +50,7 @@ public class Scrapping extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -297,43 +296,28 @@ public class Scrapping extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
-        jScrollPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Poste", "Entreprise", "Description", "Nv d'etude", "Type Contrat", "Date Publication"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Boolean.class, java.lang.Object.class, java.lang.Object.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
-        jTable1.setGridColor(new java.awt.Color(255, 255, 255));
-        jTable1.setRowHeight(22);
-        jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 938, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(358, 358, 358)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(386, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 512, Short.MAX_VALUE)
-                .addGap(22, 22, 22))
+                .addGap(81, 81, 81)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(392, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 950, 540));
@@ -346,9 +330,9 @@ public class Scrapping extends javax.swing.JFrame {
         setColor(btn_1); 
         ind_1.setOpaque(true);
         resetColor(new JPanel[]{btn_2,btn_3,btn_4}, new JPanel[]{ind_2,ind_3, ind_4});
-          this.dispose();
-       Home home = new Home();
-       home.setVisible(true);
+//          this.dispose();
+//       Home home = new Home();
+//       home.setVisible(true);
     }//GEN-LAST:event_btn_1MousePressed
 
     private void btn_3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_3MousePressed
@@ -356,9 +340,9 @@ public class Scrapping extends javax.swing.JFrame {
          setColor(btn_3); 
         ind_3.setOpaque(true);
         resetColor(new JPanel[]{btn_2,btn_1,btn_4}, new JPanel[]{ind_2,ind_1, ind_4});
-            this.dispose();
-       Modele model = new Modele();
-       model.setVisible(true);
+//            this.dispose();
+//       Modele home = new Modele();
+//       home.setVisible(true);
     }//GEN-LAST:event_btn_3MousePressed
 
     private void btn_4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_4MousePressed
@@ -366,9 +350,9 @@ public class Scrapping extends javax.swing.JFrame {
           setColor(btn_4); 
         ind_4.setOpaque(true);
         resetColor(new JPanel[]{btn_2,btn_3,btn_1}, new JPanel[]{ind_2,ind_3, ind_1});
-            this.dispose();
-       Home home = new Home();
-       home.setVisible(true);
+//            this.dispose();
+//       Home home = new Home();
+//       home.setVisible(true);
     }//GEN-LAST:event_btn_4MousePressed
 
     private void btn_2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_2MouseReleased
@@ -376,9 +360,9 @@ public class Scrapping extends javax.swing.JFrame {
           setColor(btn_2); 
         ind_2.setOpaque(true);
         resetColor(new JPanel[]{btn_1,btn_3,btn_4}, new JPanel[]{ind_1,ind_3, ind_4});
-            this.dispose();
-       Scrapping_url scraping = new Scrapping_url();
-       scraping.setVisible(true);
+//            this.dispose();
+//       Modele scraping = new Modele();
+//       scraping.setVisible(true);
     }//GEN-LAST:event_btn_2MouseReleased
 
     int xx,xy;
@@ -398,6 +382,10 @@ public class Scrapping extends javax.swing.JFrame {
         this.setLocation(x-xx,y-xy);
     }//GEN-LAST:event_jPanel2MouseDragged
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -415,21 +403,23 @@ public class Scrapping extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Scrapping.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modele.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Scrapping.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modele.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Scrapping.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modele.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Scrapping.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modele.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Scrapping().setVisible(true);
+                new Modele().setVisible(true);
             }
         });
     }
@@ -461,6 +451,7 @@ public class Scrapping extends javax.swing.JFrame {
     private javax.swing.JPanel ind_2;
     private javax.swing.JPanel ind_3;
     private javax.swing.JPanel ind_4;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel7;
@@ -468,8 +459,6 @@ public class Scrapping extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JPanel side_pane;
     // End of variables declaration//GEN-END:variables

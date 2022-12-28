@@ -36,6 +36,7 @@ public class Login extends javax.swing.JFrame {
 
         side_pane = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
@@ -49,7 +50,7 @@ public class Login extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        side_pane.setBackground(new java.awt.Color(1, 181, 204));
+        side_pane.setBackground(new java.awt.Color(71, 120, 197));
         side_pane.setToolTipText("");
         side_pane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -58,7 +59,12 @@ public class Login extends javax.swing.JFrame {
         jLabel2.setText("Offre-Emploie");
         side_pane.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 270, 70));
 
-        getContentPane().add(side_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 330, 590));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/swing/images/businessman.png"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        jLabel3.setAutoscrolls(true);
+        side_pane.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, 150, 430, 510));
+
+        getContentPane().add(side_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 590));
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -130,7 +136,7 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(241, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 820, 590));
+        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 820, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -213,6 +219,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField2;
