@@ -72,7 +72,10 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 153, 255));
         jLabel1.setText("Login");
 
-        jTextField2.setText("jTextField1");
+        jTextField2.setForeground(new java.awt.Color(102, 102, 102));
+        jTextField2.setText("Entrez votre username");
+        jTextField2.setToolTipText("");
+        jTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(51, 204, 255)));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -98,6 +101,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jPasswordField1.setText("jPasswordField1");
+        jPasswordField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(51, 153, 255)));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
